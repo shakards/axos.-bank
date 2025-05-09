@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axos Bank Clone</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      width: 150px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      color: #0070ba;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #0070ba;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn {
+      padding: 12px 24px;
+      background-color: #fff;
+      color: #0070ba;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .hero .btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 60px 0;
+    }
+
+    .feature-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-item img {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+
+    .feature-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .feature-item p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background-color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .testimonial-item {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .testimonial-item img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-item p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer .footer-links {
+      margin-bottom: 20px;
+    }
+
+    .footer .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .social-icons img {
+      width: 24px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img src="https://www.axosbank.com/logo.png" alt="Axos Bank Logo" class="logo">
+      <nav class="nav">
+        <a href="#">Personal</a>
+        <a href="#">Business</a>
+        <a href="#">Investments</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Banking Made Simple</h1>
+      <p>Discover the benefits of online banking with Axos Bank. Open an account today!</p>
+      <button class="btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="feature-item">
+        <img src="https://www.axosbank.com/icon1.png" alt="Online Banking">
+        <h3>Online Banking</h3>
+        <p>Manage your accounts anytime, anywhere with our secure online banking platform.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://www.axosbank.com/icon2.png" alt="High-Yield Savings">
+        <h3>High-Yield Savings</h3>
+        <p>Earn competitive interest rates with our high-yield savings accounts.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://www.axosbank.com/icon3.png" alt="No Fees">
+        <h3>No Fees</h3>
+        <p>Enjoy no monthly maintenance fees or hidden charges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Customers Are Saying</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-item">
+          <img src="https://www.axosbank.com/user1.jpg" alt="User 1">
+          <p>"Axos Bank has made managing my finances so much easier. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://www.axosbank.com/user2.jpg" alt="User 2">
+          <p>"The high-yield savings account is fantastic. I'm earning more interest than ever before."</p>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://www.axosbank.com/user3.jpg" alt="User 3">
+          <p>"No hidden fees and great customer service. Axos Bank is the best!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social-icons">
+        <img src="https://www.axosbank.com/facebook.png" alt="Facebook">
+        <img src="https://www.axosbank.com/twitter.png" alt="Twitter">
+        <img src="https://www.axosbank.com/linkedin.png" alt="LinkedIn">
+      </div>
+      <p>© 2023 Axos Bank. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
